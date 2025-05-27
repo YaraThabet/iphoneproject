@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Gsap from './pages/Gsap'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Hero from './components/Hero/Hero.tsx';
+import Highlight from './components/Highlight/Highlight.tsx';
+import Nav from './components/Nav/Nav.tsx';
 
+const App =() => {
   return (
-    <>
-       <Gsap />
-    </>
+    <main className="bg-black">
+      <Nav/>
+      <Hero/>
+     <Highlight/>
+    </main>
   )
 }
 
